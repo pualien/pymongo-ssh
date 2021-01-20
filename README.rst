@@ -1,7 +1,7 @@
 ssh-pymongo
 -----------
-
-Just for convenience. Note: `uri` parameter is assumed as local, after ssh.
+Python utilities to simplify connection with MongoDB through SSH tunnel.
+Note: `uri` parameter is assumed as local, after ssh.
 
 ``pip install pymongo-ssh``
 
