@@ -62,7 +62,7 @@ class MongoSession:
 
     def stop(self):
         self.connection.close()
-        self.server.stop()
+        self.server.stop(force=True)
         self.connection = None
         del self.connection
         self.server = None
