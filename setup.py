@@ -57,5 +57,5 @@ setup(name='pymongo-ssh',
       description='Python utilities to simplify connection with MongoDB through SSH tunnel',
       packages=find_packages(exclude=['tests']),
       install_requires=get_requirements('default.txt'),
-      long_description=open('README.md').read(),
+      long_description=open('README.rst').read(),
       zip_safe=False)
