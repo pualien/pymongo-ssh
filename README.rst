@@ -3,6 +3,13 @@ ssh-pymongo
 Python utilities to simplify connection with MongoDB through SSH tunnel.
 Note: `uri` parameter is assumed as local, after ssh.
 
+Where to get it
+---------------
+The source code is currently hosted on GitHub at:
+https://github.com/pualien/pymongo-ssh
+
+Binary installers for the latest released version are available at the `Python package index <https://pypi.org/project/pymongo-ssh/>`_
+
 ``pip install pymongo-ssh``
 
 Example 1

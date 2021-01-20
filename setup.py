@@ -49,7 +49,7 @@ def get_requirements(*requirements_file):
     return dependencies
 
 setup(name='pymongo-ssh',
-      version='0.0.2',
+      version='0.0.3',
       url='https://github.com/pualien/pymongo-ssh',
       license='MIT',
       author='Matteo Senardi',
