@@ -48,8 +48,9 @@ def get_requirements(*requirements_file):
             dependencies.append(maybe_dep)
     return dependencies
 
+
 setup(name='pymongo-ssh',
-      version='0.0.3',
+      version='0.0.4',
       url='https://github.com/pualien/pymongo-ssh',
       license='MIT',
       author='Matteo Senardi',
@@ -57,5 +58,17 @@ setup(name='pymongo-ssh',
       description='Python utilities to simplify connection with MongoDB through SSH tunnel',
       packages=find_packages(exclude=['tests']),
       install_requires=get_requirements('default.txt'),
-      long_description=open('README.rst').read(),
+      long_description=open('README.md').read(),
+      long_description_content_type='text/markdown',
+      python_requires='~=3.6',
+      classifiers=[
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Topic :: Software Development :: Libraries :: Application Frameworks",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+      ],
       zip_safe=False)
