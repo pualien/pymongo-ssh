@@ -1,8 +1,8 @@
 # ssh-pymongo
-[![PyPI Latest Release](https://img.shields.io/pypi/v/pymongo-ssh.svg)](https://pypi.org/project/gcloud-connectors/)
-[![PyPI Build](https://github.com/pualien/pymongo-ssh/workflows/PyPI%20Build/badge.svg)](https://github.com/pualien/py-gcloud-connectors/actions)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/pymongo-ssh)](https://pypi.org/project/gcloud-connectors/)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pymongo-ssh.svg)](https://pypi.org/project/gcloud-connectors/)
+[![PyPI Latest Release](https://img.shields.io/pypi/v/pymongo-ssh.svg)](https://pypi.org/project/pymongo-ssh/)
+[![PyPI Build](https://github.com/pualien/pymongo-ssh/workflows/PyPI%20Build/badge.svg)](https://github.com/pualien/pymongo-ssh/actions)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/pymongo-ssh)](https://pypi.org/project/pymongo-ssh/))
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pymongo-ssh.svg)](https://pypi.org/project/pymongo-ssh/))
 
 Python utilities to simplify connection with MongoDB through SSH tunnel.
 Note: uri parameter is assumed as local, after ssh.
