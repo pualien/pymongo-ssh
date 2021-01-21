@@ -1,4 +1,4 @@
-![ssh-pymongo](https://github.com/pualien/pymongo-ssh/images/master/logo.png?raw=true)
+![ssh-pymongo](https://github.com/pualien/pymongo-ssh/blob/master/images/logo.png?raw=true)
 
 
 # ssh-pymongo
