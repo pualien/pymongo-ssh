@@ -1,3 +1,6 @@
+![ssh-pymongo](https://github.com/pualien/pymongo-ssh/images/master/logo.png?raw=true)
+
+
 # ssh-pymongo
 [![PyPI Latest Release](https://img.shields.io/pypi/v/pymongo-ssh.svg)](https://pypi.org/project/pymongo-ssh/)
 [![PyPI Build](https://github.com/pualien/pymongo-ssh/workflows/PyPI%20Build/badge.svg)](https://github.com/pualien/pymongo-ssh/actions)
