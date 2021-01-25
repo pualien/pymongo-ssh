@@ -1,17 +1,23 @@
 import getpass
 from urllib import parse
 
+import pandas as pd
 import pymongo
 from sshtunnel import SSHTunnelForwarder
 
 
 class MongoSession:
 
-    def __init__(self, host, user=None, password=None, key=None, uri=None, port=22, to_host='127.0.0.1', to_port=27017):
+    def __init__(self, host=None, user=None, password=None, key=None, uri=None, port=22, to_host='127.0.0.1', to_port=27017, data_map=None):
+        if data_map is None:
+            data_map = {}
+        self.data_map = data_map
 
-        host = (host, port)
-        user = user or getpass.getuser()
-        key = key or '/home/{user}/.ssh/id_rsa'.format(user=user)
+        host = (data_map.get("ssh_host"), port) if data_map.get("ssh_host") else (host, port)
+        user = data_map.get("ssh_username") or user or getpass.getuser()
+        key = data_map.get("ssh_host_key") or key or '/home/{user}/.ssh/id_rsa'.format(user=user)
+        self.uri = parse.urlparse(data_map.get("connection_uri")) if data_map.get("connection_uri") else parse.urlparse(
+            uri)
         self.to_host = to_host
         self.uri = parse.urlparse(uri)
         self.connection = None
@@ -59,6 +65,9 @@ class MongoSession:
             host=self.to_host,
             port=self.server.local_bind_port,
             **params)
+
+    def pd_aggregate(self, col, pipeline):
+        return pd.DataFrame(list(col.aggregate(pipeline)))
 
     def stop(self):
         self.connection.close()
